@@ -1,5 +1,6 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
+var clearCanvas = document.getElementById("clearCanvas");
 
 var radius = 5;
 var dragging = false; //when page loads, app assumes user is not holding down the mouse button
@@ -10,6 +11,9 @@ canvas.height = window.innerHeight;
 //connects the points on the string to create a smooth line
 context.lineWidth = radius * 2;
 
+function eraseCanvas() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+}
 
 //putpoint - puts down a circle where user clicks the mouse
 //dragging creates a line when left button is held down
@@ -41,3 +45,4 @@ var disengage = function() {
 canvas.addEventListener('mousedown', engage);
 canvas.addEventListener('mousemove', putPoint);
 canvas.addEventListener('mouseup', disengage);
+clearCanvas.addEventListener("click", eraseCanvas);
