@@ -2,7 +2,7 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var clearCanvas = document.getElementById("clearCanvas");
 
-var radius = 5;
+var radius = 2;
 var dragging = false; //when page loads, app assumes user is not holding down the mouse button
 
 canvas.width = window.innerWidth;

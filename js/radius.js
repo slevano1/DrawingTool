@@ -12,10 +12,10 @@ var setRadius = function(newRadius) {
 
 
 //var applies to all the diff variables when set up on this manner
-var minRad = 0.5,
+var minRad = 1,
     maxRad = 100,
-    defaultRad = 5,
-    interval = 5,
+    defaultRad = 2,
+    interval = 2,
     radSpan = document.getElementById('radval'),
     decRad = document.getElementById('decrad'),
     incRad = document.getElementById('incrad');

@@ -16,11 +16,14 @@
     padding: 10px;
     position: fixed;
     top: 0;
-    background-color: #e7e7e7;
+    background-color: #b5a89f
 }
 
 #rad {
     margin-top: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
 }
 
 
@@ -28,6 +31,22 @@
 
 #clearCanvas {
     margin-top: 30px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff1a1a;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 2px #999;
+}
+
+#clearCanvas:active {
+    transform: translateY(2px);
 }
 
 
@@ -36,6 +55,7 @@
 .radcontrol {
     width: 30px;
     height: 30px;
+    cursor: pointer;
     background-color: #12bdfd;
     display: inline-block;
     padding: 5px;
@@ -55,10 +75,11 @@
 }
 
 
-/* color palette */
+/* color palette options */
 
 #colors {
     float: right;
+    cursor: pointer;
 }
 
 .swatch {
